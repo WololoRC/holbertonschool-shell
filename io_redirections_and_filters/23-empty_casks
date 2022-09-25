@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | find -empty | cut -d"/" -f2,3 | tr "/" " " | fmt -w 10
+ls -a | sort -u | uniq -u | uniq -u | find -empty | cut -d"/" -f2,3 | tr "/" " " | fmt -w 10 

@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | find -empty -type d,f | sort -g 
+find . -empty -name "*" | rev | cut -d/ -f 1 | rev 

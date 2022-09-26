@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | find -empty | tr -d "./"
+ls -a | find -empty -type d,f | sort -g "
